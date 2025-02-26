@@ -1,15 +1,14 @@
 # Dockerizing Flask with Postgres, Gunicorn, and Nginx
 
 ## Overview
-This repository contains a containerized Flask web application that integrates with PostgreSQL, Gunicorn, and Nginx.
+This repo contains a containerized Flask web application that integrates with PostgreSQL, Gunicorn, and Nginx(using the full Instagram tech stack).
 The project follows a structured microservices architecture to provide a robust and scalable web service via this [tutorial](https://testdriven.io/blog/dockerizing-flask-with-postgres-gunicorn-and-nginx/).
 The application includes an image upload feature, which is shown in the gif below.
 
 ## Example Upload
 ![Uploading Image](example.gif)
 
-
----
+___
 
 ## Build Instructions
 To set up and run the Flask application within Docker, follow these steps:
@@ -26,7 +25,7 @@ To set up and run the Flask application within Docker, follow these steps:
    $ cd flask-on-docker
    ```
 
-3. ***Create an .env.prod.db***
+3. **Create an .env.prod.db**
 
     ```
     POSTGRES_USER={your username}
