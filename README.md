@@ -26,7 +26,7 @@ To set up and run the Flask application within Docker, follow these steps:
    $ cd flask-on-docker
    ```
 
-3. ***Create an .env.prod.db.***
+3. ***Create an .env.prod.db***
 
     ```
     POSTGRES_USER={your username}
