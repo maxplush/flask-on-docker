@@ -28,12 +28,12 @@ To set up and run the Flask application within Docker, follow these steps:
 
 3. Navigate to the `services/web` directory:
    ```sh
-   cd services/web
+   $ cd services/web
     ```
 
 4. Install the required dependencies:
    ```sh
-   pip install -r requirements.txt
+   $ pip install -r requirements.txt
      ```
 
 5. **Build and Start Services:**
