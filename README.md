@@ -26,37 +26,35 @@ To set up and run the Flask application within Docker, follow these steps:
    $ cd flask-on-docker
    ```
 
-3. Navigate to the `services/web` directory:
-   ```sh
-   $ cd services/web
+3. ***Create an .env.prod.db.***
+
+    ```
+    POSTGRES_USER={your username}
+    POSTGRES_PASSWORD={your password}
+    POSTGRES_DB={your db name}
     ```
 
-4. Install the required dependencies:
-   ```sh
-   $ pip install -r requirements.txt
-     ```
-
-5. **Build and Start Services:**
+4. **Build and Start Services:**
    Run the following command to build and start the Docker containers:
    ```
    $ docker compose -f docker-compose.prod.yml up -d --build
    $ docker compose -f docker-compose.prod.yml exec web python manage.py create_db
    ```
 
-6. **Enable Port Forwarding:**
+5. **Enable Port Forwarding:**
    In a second terminal window, run:
    ```
    $ ssh <username>@lambda.compute.cmc.edu -p 5055 -L localhost:1337:localhost:1437
    ```
 
-7. **Access the Web App:**
+6. **Access the Web App:**
    Open a web browser and go to:
    ```
    http://localhost:1337/upload
    ```
    This will bring up the image upload interface.
 
-8. **View the image**
+7. **View the image**
    Then to view the image go to:
    ```
    http://localhost:1337/media/IMAGE_FILE_NAME
